@@ -27,10 +27,12 @@ document.getElementById('add-gb').addEventListener('click', function() {
 // TODO: Hook up event listeners for the rest of the buttons
 
 addgb = document.querySelector("#qty-gb")
+totalcookies = document.querySelector("#qty-total")
 
 document.getElementById('add-gb').addEventListener('click', function(){
     gb = gb + 1;
     addgb.textContent = gb;
+    totalcookies.textContent = gb + cc + sugar;
 
 });
 
@@ -38,6 +40,7 @@ addcc = document.querySelector("#qty-cc")
 document.getElementById('add-cc').addEventListener('click', function(){
     cc = cc + 1;
     addcc.textContent = cc;
+    totalcookies.textContent = gb + cc + sugar;
 
 
 });
@@ -46,6 +49,7 @@ addsugar = document.querySelector("#qty-sugar")
 document.getElementById('add-sugar').addEventListener('click', function(){
     sugar = sugar + 1;
     addsugar.textContent = sugar;
+    totalcookies.textContent = gb + cc + sugar;
 
 });
 
